@@ -1,4 +1,4 @@
-#OpenVPN gateway
+# OpenVPN gateway
 
 Файлы настроек шлюза openvpn с пушем DNS cloudflare клиенту. 
 
