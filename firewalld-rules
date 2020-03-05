@@ -4,4 +4,5 @@
 firewall-cmd --direct --permanent --add-rule ipv4 nat POSTROUTING 0 -o ens34 -j MASQUERADE
 firewall-cmd --direct --permanent --add-rule ipv4 filter FORWARD 0 -i ens32 -o ens34 -j ACCEPT
 firewall-cmd --direct --permanent --add-rule ipv4 filter FORWARD 0 -i ens34 -o ens32 -m state --state RELATED,ESTABLISHED -j ACCEPT
+firewall-cmd --permanent --add-masquerade
 systemctl restart firewalld
